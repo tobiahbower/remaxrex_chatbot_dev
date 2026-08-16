@@ -39,6 +39,14 @@ For customers who want to search for properties themselves, we offer multiple se
 
 **For personalized assistance**, we recommend contacting our experienced agents directly.
 
+## Current Listings
+
+As of the latest update, RE/MAX Rex has approximately 62 active listings available through our rex-fl.remax.com platform. These listings include residential and commercial properties across various locations in Florida.
+
+To view all current listings with addresses, prices, and details, please visit our map search at https://rex-fl.remax.com/index.php?showagency=1&rtype=map where you can filter by location, price range, property type, and other criteria.
+
+**Note:** The number of active listings changes frequently as properties are sold and new listings are added. For the most current information, please check our website or contact our agents directly.
+
 ## Key Agents
 
 **Ana Armua** - Available for residential and commercial real estate assistance

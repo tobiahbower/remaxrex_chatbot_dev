@@ -26,6 +26,25 @@
     return el;
   }
 
+  function parseMarkdown(text) {
+    // Basic markdown parsing - escape HTML first for security
+    var html = text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      // Bold: **text**
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+      // Italic: *text*
+      .replace(/\*([^*]+)\*/g, '<em>$1</em>')
+      // Code: `text`
+      .replace(/`([^`]+)`/g, '<code>$1</code>')
+      // Links: [text](url)
+      .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>')
+      // Newlines to <br>
+      .replace(/\n/g, '<br>');
+    return html;
+  }
+
   function RemaxRexChatWidget(config) {
     this.config = config;
     this.isOpen = false;
@@ -120,7 +139,12 @@
   RemaxRexChatWidget.prototype.addMessage = function (role, content) {
     this.messages.push({ role: role, content: content });
     var bubble = createElement('div', 'remaxrex-chat-message remaxrex-chat-message-' + role);
-    bubble.textContent = content;
+    // Use innerHTML with parsed markdown for assistant messages
+    if (role === 'assistant') {
+      bubble.innerHTML = parseMarkdown(content);
+    } else {
+      bubble.textContent = content;
+    }
     this.messagesEl.appendChild(bubble);
     this.messagesEl.scrollTop = this.messagesEl.scrollHeight;
   };
