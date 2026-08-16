@@ -1,0 +1,83 @@
+Sitemap: https://rex-fl.remax.com/sitemap-index.xml
+
+User-agent: *
+Disallow: /emails_kvarea/
+Disallow: /mobilefirst/
+Disallow: /private_kvarea/
+Disallow: /index.php?similar=1
+Disallow: /language.php
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+Disallow: /admin/
+Disallow: /index.php?advanced=1 
+Disallow: /index.php?quick=1 
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Googlebot
+Disallow: /index.php?advanced=1 
+Disallow: /index.php?quick=1 
+
+Allow: /sell
+Allow: /areas
+Allow: /pages
+Allow: /resources
+Allow: /index.php?showagency=1 
+Allow: /index.php?showagent=1 
+
+User-agent: AdsBot-Google
+Allow: /
+
+User-agent: Slurp
+Crawl-delay: 120
+
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 10
+
+User-agent: msnbot
+Allow: /
+Crawl-delay: 120
+
+User-agent: bingbot
+Allow: /
+Crawl-delay: 120
+
+# Adsense
+User-agent: Mediapartners-Google
+Allow: /
+Crawl-delay: 10
+
+User-agent: AdsBot-Google-Mobile
+Allow: /
+Crawl-delay: 10
+
+User-agent: AdsBot-Google-Mobile-Apps
+Allow: /
+Crawl-delay: 10
+
+User-agent: PowerMapper
+Allow: /
+Crawl-delay: 5
+
+User-agent: Screaming Frog SEO Spider
+Allow: /
+
+User-agent: SemrushBot
+Allow: /
+
+User-agent: TermlyBot
+Allow: /
+
+User-agent: CookieYesbot
+Allow: /
+
+User-agent: Osano Privacy Compliance Scanner
+Allow: /
+
+User-agent: *
+Disallow: /

@@ -1,0 +1,16 @@
+name = "remax-rex-chat"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+
+[ai]
+binding = "AI"
+
+[vars]
+RETRIEVAL_MODE = "full"
+KNOWLEDGE_URL = "https://tobiahbower.github.io/data/remaxrex-knowledge.md"
+KNOWLEDGE_JSON_URL = "https://tobiahbower.github.io/data/remaxrex-knowledge.json"
+ALLOWED_ORIGINS = "https://remaxrex.com,http://localhost:8000,http://127.0.0.1:8000,http://localhost:5500,http://127.0.0.1:5500,http://localhost:3000,http://127.0.0.1:3000"
+LLM_MODEL = "@cf/meta/llama-3.2-3b-instruct"
+LLM_MAX_TOKENS = "512"
+LLM_TEMPERATURE = "0.2"
+MAX_MESSAGE_LENGTH = "500"
